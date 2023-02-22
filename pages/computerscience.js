@@ -21,7 +21,7 @@ export default function ComputerScience() {
         <div className='w-full pt-12 lg:pt-24 flex flex-col justify-center items-center text-center text-cyan-900'>
           <h1 className='text-xl md:text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Computer Science</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-sm lg:max-w-lg'>{data[2].shortdescription}</h3>
-          <div className='bg-white bg-opacity-80 w-fit max-w-2xl p-2 m-2 rounded-xl'>
+          <div className='bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl'>
             <h2 className='text-xl lg:text-2xl font-bold m-2 p-2'>Vocabulary</h2>
             <div className='flex flex-col justify-left text-left text-sm'>
               
