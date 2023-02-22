@@ -47,10 +47,6 @@ export default function SQL() {
                   The most popular RDBMSs include MySQL, PostgreSQL, SQLite, Oracle Database, and Microsoft SQL Server.</p>
                 </div>
                 <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
-                  <p className='font-bold p-2'>SELECT</p>
-                  <p className='text-sm p-2'>A SQL command that retrieves data.</p>
-                </div>
-                <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
                   <p className='font-bold p-2'>SQL</p>
                   <p className='text-sm p-2'>"Structured Query Language," a programming language used to manage and change databases.</p>
                 </div>
@@ -58,10 +54,6 @@ export default function SQL() {
                   <p className='font-bold p-2'>Table</p>
                   <p className='text-sm p-2'>A collection of rows and columns.</p>
                 </div>
-                <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
-                  <p className='font-bold p-2'>WHERE</p>
-                  <p className='text-sm p-2'>A SQL clause that filters data based on specific conditions.</p>
-                </div> 
               </div>
             </div>
 
