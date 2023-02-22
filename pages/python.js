@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import data from '@/data.js'
+import { BeakerIcon, CheckCircleIcon } from '@heroicons/react/24/solid'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,22 +24,77 @@ export default function Python() {
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-sm lg:max-w-lg'>{data[0].shortdescription}</h3>
         </div>
         <div className='flex flex-row flex-wrap justify-center items-center p-4 bg-gradient-to-r from-cyan-600 to-teal-600'>
-          <div className='flex flex-col flex-wrap justify-center items-center p-4 m-2'>
-            <h3 className='font-bold text-lg lg:text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-100 to-teal-100'>Features of Python</h3>
-            <div className='flex flex-col bg-white bg-opacity-80 m-2 p-2 rounded-xl w-fit font-bold'>
-              <p className='text-sm lg:text-md'>Object-Oriented</p>
-              <p className='text-sm lg:text-md'>Statically Typed</p>
-              <p className='text-sm lg:text-md'>Interpreted</p>
+        <div className='flex flex-col flex-wrap justify-center items-center p-2 m-2'>
+            <h3 className='font-bold text-lg lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-100 to-teal-100 p-2'>Features of Python</h3>
+            <div className='flex flex-col justify-left text-left items-left bg-white bg-opacity-80 text-teal-900 m-2 p-2 rounded-xl w-fit'>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'> Object-Oriented</p>
+                <p className='text-sm max-w-lg p-2 m-2'>In object-oriented programming languages like Python,
+                all data is represented by "objects."  Each object keeps data stored in "attributes".
+                Objects also have special functions called "methods" for changing and updating the data in the attributes.  
+                Objects in the same "class" are created with the same attributes and methods.
+                </p>
+              </div>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'> Dynamically Typed</p>
+                <p className='text-sm max-w-lg p-2 m-2'>In dynamically typed languages like Python,
+                variables are automatically assigned a "type" (e.g. integer or string) to match their data.
+                The type of a variable is assigned at runtime rather than compile time. (Python isn't compiled.)
+                Unlike in statically typed languages, you can also change the type of a variable.  For example, 
+                the integer <i>x = 3</i> can become the string <i>x = 'hello world'</i>
+                </p>
+              </div>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'> Strongly Typed</p>
+                <p className='text-sm max-w-lg p-2 m-2'>Although Python automatically assigns data types, 
+                it cannot automatically convert them.  Trying to add <i>x + y</i> with the integer <i>x = 1</i> and the string <i>y = '2'</i> will result
+                in a TypeError.  You cannot add an integer and a string; you must convert them yourself to the same type.
+                Running int(y) will convert y into the type 'integer,' and x + y will result in 3.  Running str(x) will convert x 
+                into the type 'string,' and x + y will result in '12'.  
+                </p>
+              </div>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'> Interpreted</p>
+                <p className='text-sm max-w-lg p-2 m-2'>Python is "interpreted," not compiled. 
+                This means Python code is executed by an interpreter at runtime.  It does not need to be compiled into machine code
+                before it can be executed.  Although this can make Python slow, it also makes developing easier for programmers.
+                </p>
+              </div>
             </div>
           </div>
-          <div className='flex flex-col flex-wrap justify-center items-center text-teal-900 p-4 m-2'>
-            <h3 className='font-bold text-lg lg:text-xl'>Features of Python</h3>
-            <div className='flex flex-col bg-white bg-opacity-80 m-2 p-2 rounded-xl w-fit font-bold'>
-              <p className='text-sm lg:text-md'>Object-Oriented</p>
-              <p className='text-sm lg:text-md'>Statically Typed</p>
-              <p className='text-sm lg:text-md'>Interpreted</p>
+
+          <div className='flex flex-col flex-wrap justify-center items-center p-2 m-2'>
+            <h3 className='font-bold text-lg lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-100 to-teal-100 p-2'>How do people use Python?</h3>
+            <div className='flex flex-col justify-left text-left items-left bg-white bg-opacity-80 text-teal-900 m-2 p-2 rounded-xl w-fit'>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'> Web Development</p>
+                <p className='text-sm max-w-lg p-2 m-2'>Python can be used to create web applications and back-end services. Popular web frameworks like Django and Flask make it easy to build and deploy web applications.</p>
+              </div>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'> Data Science </p>
+                <p className='text-sm max-w-lg p-2 m-2'>Python can be used for data analysis, machine learning, and artificial intelligence. Libraries like NumPy, Pandas, and SciPy can be used for data processing, while libraries like TensorFlow and PyTorch provide machine learning and deep learning tools.</p>
+              </div>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'>Automation and Scripting</p>
+                <p className='text-sm max-w-lg p-2 m-2'>Python can automate boring tasks like data processing, file manipulation, and web scraping as well as run useful scripts.</p>
+              </div>
+              <div className='flex flex-row flex-wrap justify-left items-center p-2 m-2'>
+                <CheckCircleIcon className='h-6 w-6 md:h-8 md:w-8 m-2' />
+                <p className='text-sm lg:text-md p-2 w-1/4 font-bold'>Education</p>
+                <p className='text-sm max-w-lg p-2 m-2'>Python is often used to teach beginners in introductory programming courses because 
+                it is simple and user-friendly compared to other languages.</p>
+              </div>
             </div>
           </div>
+          
+
         </div>
         
       </main>
