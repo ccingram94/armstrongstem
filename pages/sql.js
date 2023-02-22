@@ -60,7 +60,7 @@ export default function SQL() {
                 <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
                   <p className='font-bold p-2'>WHERE</p>
                   <p className='text-sm p-2'>A SQL clause that filters data based on specific conditions.</p>
-                </div>
+                </div> 
               </div>
             </div>
 
