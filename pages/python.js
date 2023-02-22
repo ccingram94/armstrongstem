@@ -19,7 +19,7 @@ export default function Python() {
       </Head>
       <main className='w-screen h-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
         <Header />
-        <div className='w-max pt-12 lg:pt-24 flex flex-col flex-wrap justify-center items-center text-center text-cyan-900'>
+        <div className='w-max pt-6 lg:pt-12 flex flex-col flex-wrap justify-center items-center text-center text-cyan-900'>
           <h1 onClick={() => console.log(data)} className='text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-sm lg:max-w-lg'>{data[0].shortdescription}</h3>
         </div>
@@ -41,7 +41,7 @@ export default function Python() {
                 <td className='p-2 m-2'>
                   x = 3
                 </td>
-                <td className='p-2 m-2'>Whole numbers without a decimal.</td>
+                <td className='p-2 m-2'>Whole numbers without a decimal</td>
               </tr>
               <tr>
                 <td className='p-2 m-2'>
@@ -51,7 +51,7 @@ export default function Python() {
                   x = 4.2
                 </td>
                 <td className='p-2 m-2'>
-                  Real numbers with a decimal.
+                  Real numbers with a decimal
                 </td>
               </tr>
               <tr>
@@ -62,7 +62,7 @@ export default function Python() {
                   x = true
                 </td>
                 <td className='p-2 m-2'>
-                  True or false (used for decision making)
+                  True or false
                 </td>
               </tr>
               <tr>
@@ -73,7 +73,7 @@ export default function Python() {
                   x = 'hello'
                 </td>
                 <td className='p-2 m-2'>
-                  Text stored as a sequence of characters.
+                  Text stored as a sequence of characters
                 </td>
               </tr>
               <tr>
@@ -84,7 +84,7 @@ export default function Python() {
                   x = [1, 2, 3]
                 </td>
                 <td className='p-2 m-2'>
-                  A list of items that can be changed.
+                  A list of items that can be changed
                 </td>
               </tr>
               <tr>
@@ -95,7 +95,7 @@ export default function Python() {
                   x = (1, 2, 3)
                 </td>
                 <td className='p-2 m-2'>
-                  A list of items that cannot be changed.
+                  A list of items that cannot be changed
                 </td>
               </tr>
               <tr>
@@ -106,7 +106,7 @@ export default function Python() {
                   <p>x = { " { 1, 2, 3 } " }</p>
                 </td>
                 <td className='p-2 m-2'>
-                  A list of unique items.
+                  A list of unique items
                 </td>
               </tr>
               <tr>
@@ -117,7 +117,7 @@ export default function Python() {
                   <p>x = {" { 'number1' : 1, 'number2': 2 } "}</p>
                 </td>
                 <td className='p-2 m-2'>
-                  A collection of key-value pairs.
+                  A collection of key-value pairs
                 </td>
               </tr>
             </tbody>
