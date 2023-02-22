@@ -23,14 +23,14 @@ export default function Python() {
           <h1 onClick={() => console.log(data)} className='text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-sm lg:max-w-lg'>{data[0].shortdescription}</h3>
         </div>
-        <div className='flex flex-col w-fit justify-center items-center text-center p-2 m-2 bg-white bg-opacity-80 rounded-xl text-teal-900'>
+        <div className='flex flex-col w-fit justify-center items-center text-center p-2 m-2 bg-white bg-opacity-80 rounded-xl text-teal-900 text-xs lg:text-sm'>
           <h3 className='font-bold text-center text-xl lg:text-2xl p-2 m-2'>Python Data Types</h3>
           <table className='w-fit table-auto flex flex-col justify-center text-left'>
             <thead className='w-full flex flex-row justify-left items-center'>
               <tr className='w-full p-2 m-2 flex flex-row justify-left items-center'>
-                <th className='w-full'>Type</th>
-                <th className='w-full'>Example</th>
-                <th className='w-full'>Definition</th>
+                <th className='w-full p-2 m-2'>Type</th>
+                <th className='w-full p-2 m-2'>Example</th>
+                <th className='w-full p-2 m-2'>Definition</th>
               </tr>
             </thead>
             <tbody className='p-2 m-2'>

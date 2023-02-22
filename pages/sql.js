@@ -16,7 +16,7 @@ export default function SQL() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='h-full bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
+      <main className='min-h-screen bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
         <Header />
         <div className='w-full pt-12 lg:pt-24 flex flex-col justify-center items-center text-center text-cyan-900'>
           <h1 className='text-xl md:text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>SQL</h1>
