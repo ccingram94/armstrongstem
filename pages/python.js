@@ -17,13 +17,113 @@ export default function Python() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='h-full bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
+      <main className='w-screen h-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
         <Header />
-        <div className='w-full pt-12 lg:pt-24 flex flex-col flex-wrap justify-center items-center text-center text-cyan-900'>
+        <div className='w-max pt-12 lg:pt-24 flex flex-col flex-wrap justify-center items-center text-center text-cyan-900'>
           <h1 onClick={() => console.log(data)} className='text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-sm lg:max-w-lg'>{data[0].shortdescription}</h3>
         </div>
-        <div className='flex flex-row flex-wrap justify-center items-center p-4 bg-gradient-to-r from-cyan-600 to-teal-600'>
+        <div className='flex flex-col w-fit justify-center items-center text-center p-2 m-2 bg-white bg-opacity-80 rounded-xl text-teal-900'>
+          <h3 className='font-bold text-center text-xl lg:text-2xl p-2 m-2'>Python Data Types</h3>
+          <table className='w-fit table-auto flex flex-col justify-center text-left'>
+            <thead className='w-full flex flex-row justify-left items-center'>
+              <tr className='w-full p-2 m-2 flex flex-row justify-left items-center'>
+                <th className='w-full'>Type</th>
+                <th className='w-full'>Example</th>
+                <th className='w-full'>Definition</th>
+              </tr>
+            </thead>
+            <tbody className='p-2 m-2'>
+              <tr>
+                <td className='p-2 m-2'>
+                  Integer
+                </td>
+                <td className='p-2 m-2'>
+                  x = 3
+                </td>
+                <td className='p-2 m-2'>Whole numbers without a decimal.</td>
+              </tr>
+              <tr>
+                <td className='p-2 m-2'>
+                  Floating-point number
+                </td>
+                <td className='p-2 m-2'>
+                  x = 4.2
+                </td>
+                <td className='p-2 m-2'>
+                  Real numbers with a decimal.
+                </td>
+              </tr>
+              <tr>
+                <td className='p-2 m-2'>
+                  Boolean
+                </td>
+                <td className='p-2 m-2'>
+                  x = true
+                </td>
+                <td className='p-2 m-2'>
+                  True or false (used for decision making)
+                </td>
+              </tr>
+              <tr>
+                <td className='p-2 m-2'>
+                  String
+                </td>
+                <td className='p-2 m-2'>
+                  x = 'hello'
+                </td>
+                <td className='p-2 m-2'>
+                  Text stored as a sequence of characters.
+                </td>
+              </tr>
+              <tr>
+                <td className='p-2 m-2'>
+                  List
+                </td>
+                <td className='p-2 m-2'>
+                  x = [1, 2, 3]
+                </td>
+                <td className='p-2 m-2'>
+                  A list of items that can be changed.
+                </td>
+              </tr>
+              <tr>
+                <td className='p-2 m-2'>
+                  Tuple
+                </td>
+                <td className='p-2 m-2'>
+                  x = (1, 2, 3)
+                </td>
+                <td className='p-2 m-2'>
+                  A list of items that cannot be changed.
+                </td>
+              </tr>
+              <tr>
+                <td className='p-2 m-2'>
+                  Set
+                </td>
+                <td className='p-2 m-2'>
+                  <p>x = { " { 1, 2, 3 } " }</p>
+                </td>
+                <td className='p-2 m-2'>
+                  A list of unique items.
+                </td>
+              </tr>
+              <tr>
+                <td className='p-2 m-2'>
+                  Dictionary
+                </td>
+                <td className='p-2 m-2'>
+                  <p>x = {" { 'number1' : 1, 'number2': 2 } "}</p>
+                </td>
+                <td className='p-2 m-2'>
+                  A collection of key-value pairs.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className='flex flex-row flex-wrap w-full justify-center items-center p-4 bg-gradient-to-r from-cyan-600 to-teal-600'>
         <div className='flex flex-col flex-wrap justify-center items-center p-2 m-2'>
             <h3 className='font-bold text-lg lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-100 to-teal-100 p-2'>Features of Python</h3>
             <div className='flex flex-col justify-left text-left items-left bg-white bg-opacity-80 text-teal-900 m-2 p-2 rounded-xl w-fit'>
