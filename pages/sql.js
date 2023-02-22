@@ -22,8 +22,9 @@ export default function SQL() {
           <h1 className='text-xl md:text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>SQL</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-sm lg:max-w-lg'>{data[1].shortdescription}</h3>
 
-          <div className='flex flex-row flex-wrap justify-center items-center'>
-            <div className='flex flex-col bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl'>
+          <div className='flex flex-row flex-wrap justify-center items-top'>
+            
+            <div className='flex flex-col bg-white bg-opacity-90 w-fit max-w-lg p-2 m-2 rounded-xl'>
               <h2 className='text-xl lg:text-2xl font-bold m-2 p-2'>Vocabulary</h2>
               <div className='flex flex-col justify-left text-left text-sm'>
                 
@@ -64,7 +65,7 @@ export default function SQL() {
               </div>
             </div>
 
-            <div className='flex flex-col justify-center items-center bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl'>
+            <div className='flex flex-col justify-top items-center max-w-sm bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl'>
               <h2 className='text-xl lg:text-2xl font-bold m-2 p-2 opacity-80'>Example Table</h2>
               <p className='p-2 m-2 text-sm'>Here is an example table named "Employees."  The table has three <i>fields</i> (columns) named ID Number, Name, and Age.
               The table has five <i>records</i> (rows) for each employee's data.</p>
@@ -111,6 +112,50 @@ export default function SQL() {
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            <div className='flex flex-col justify-top items-center max-w-lg'>
+              <div className='flex flex-col bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl'>
+                <h2 className='text-xl lg:text-2xl font-bold m-2 p-2'>Common SQL Queries</h2>
+                <div className='flex flex-col justify-left text-left text-sm'>
+                  
+                <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>DELETE</p>
+                    <p className='text-sm p-2'>Remotes data from the table.</p>
+                </div>
+                <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>GROUP BY</p>
+                    <p className='text-sm p-2'>Groups the retrieved data by one or more columns, 
+                    often used with "aggregate functions" to calculate values for a group.</p>
+                  </div>
+                  <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>INSERT</p>
+                    <p className='text-sm p-2'>Adds new data to the table.</p>
+                  </div>
+                  <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>JOIN</p>
+                    <p className='text-sm p-2'>Combines data from two or more tables based on a related column.</p>
+                  </div>
+                  <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>ORDER BY</p>
+                    <p className='text-sm p-2'>Retrieves data in ascending or descending order based on one or more columns.</p>
+                  </div>
+                  <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>SELECT</p>
+                    <p className='text-sm p-2'>Retrieves data from the database.</p>
+                  </div>
+                  <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>UPDATE</p>
+                    <p className='text-sm p-2'>Changes existing data in a table.</p>
+                  </div>
+                  <div className='p-2 flex flex-row flex-wrap justify-left text-left items-center'>
+                    <p className='font-bold p-2'>WHERE</p>
+                    <p className='text-sm p-2'>Filters data by a specific conditions.</p>
+                  </div>
+                  
+
+                </div>
+              </div>
             </div>
 
           </div>
