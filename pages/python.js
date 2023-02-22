@@ -33,7 +33,7 @@ export default function Python() {
                 <th className='w-full p-2 m-2'>Definition</th>
               </tr>
             </thead>
-            <tbody className='p-2 m-2'>
+            <tbody className='p-2 m-2 max-w-lg'>
               <tr>
                 <td className='p-2 m-2'>
                   Integer
