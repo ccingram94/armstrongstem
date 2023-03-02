@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import data from '@/data.js'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,12 +17,45 @@ export default function ComputerScience() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='min-h-screen w-full bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
+      <main className='min-h-screen w-full bg-gradient-to-b from-white to-teal-100 via-cyan-100'>
         <Header />
-        <div className='w-full pt-12 lg:pt-24 flex flex-col justify-center items-center text-center text-cyan-900'>
+        <div className='w-full pt-12 flex flex-col justify-center items-center text-center text-cyan-900'>
           <h1 className='text-xl md:text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Computer Science</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-xs lg:max-w-lg'>{data[2].shortdescription}</h3>
-          <div className='bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl'>
+          <div className='flex flex-row flex-wrap justify-center items-center text-center p-2 m-2 max-w-6xl'>
+
+            <Link href="/cs/programming">
+              <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+                <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Programming Fundamentals</h3>
+                <p className='text-xs p-2 m-2'>variables, data types, control structures, functions</p>
+              </div>
+            </Link>
+            
+            <Link href="/cs/oop">
+              <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+                <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Object-Oriented Programming</h3>
+                <p className='text-xs p-2 m-2'>classes, objects, inheritance, polymorphism</p>
+              </div>
+            </Link>
+
+            <Link href="/cs/datastructures">
+              <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+                <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Data Structures</h3>
+                <p className='text-xs p-2 m-2'>arrays, linked lists, stacks, queues, trees, graphs</p>
+              </div>
+            </Link>
+            <Link href="/cs/operatingsystems">
+              <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+                <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Operating Systems</h3>
+                <p className='text-xs p-2 m-2'>processes, threads, scheduling, synchronization, memory management, file systems</p>
+              </div>
+            </Link>
+            <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Computer Networks</h3>
+              <p className='text-xs p-2 m-2'>TCP/IP, OSI model, routing, switching</p>
+            </div>
+          </div>
+          <div className='bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl transition-all'>
             <h2 className='text-xl lg:text-2xl font-bold m-2 p-2'>Vocabulary</h2>
             <div className='flex flex-col justify-left text-left text-sm'>
               

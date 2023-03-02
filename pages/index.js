@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='min-h-screen w-full bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
+      <main className='min-h-screen w-full bg-gradient-to-b from-white to-teal-100 via-cyan-100'>
         <Header />
         <div className='w-full h-full pt-12 lg:pt-24 flex flex-row flex-wrap justify-center items-center text-center text-cyan-900'>
           <div className='max-w-6xl flex flex-row flex-wrap justify-center items-center text-center'>

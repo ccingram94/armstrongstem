@@ -17,13 +17,38 @@ export default function Python() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full h-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
+      <main className='w-full h-full flex flex-col justify-center items-center bg-gradient-to-b from-white to-teal-100 via-cyan-100'>
         <Header />
-        <div className='w-max pt-6 lg:pt-12 flex flex-col flex-wrap justify-center items-center text-center text-cyan-900'>
+        <div className='w-max pt-12 flex flex-col flex-wrap justify-center items-center text-center text-cyan-900'>
           <h1 onClick={() => console.log(data)} className='text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-xs lg:max-w-lg'>{data[0].shortdescription}</h3>
         </div>
-
+        <div className='flex flex-row flex-wrap justify-center items-center text-center p-2 m-2 max-w-6xl'>
+            <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python Basics</h3>
+              <p className='text-xs p-2 m-2'>variables, data types, control structures, functions</p>
+            </div>
+            <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold max-w-sm text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Object-Oriented Programming with Python</h3>
+              <p className='text-xs p-2 m-2'>classes, objects, inheritance, polymorphism</p>
+            </div>
+            <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold max-w-sm text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Data Structures in Python</h3>
+              <p className='text-xs p-2 m-2'>lists, tuples, dictionaries, sets</p>
+            </div>
+            <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold max-w-sm text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>File Handling in Python</h3>
+              <p className='text-xs p-2 m-2'>reading and writing files, file objects</p>
+            </div>
+            <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold max-w-sm text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python Web Development</h3>
+              <p className='text-xs p-2 m-2'>Django and Flask</p>
+            </div>
+            <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold max-w-sm text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python Libraries</h3>
+              <p className='text-xs p-2 m-2'>NumPy, Pandas, Matplotlib, SciPy</p>
+            </div>
+        </div>
         <div className='flex flex-row flex-wrap p-2 m-2 justify-center items-top '>
 
             <div className='flex flex-col w-fit justify-center items-center content-center text-center p-2 m-2 bg-white bg-opacity-80 rounded-xl text-teal-900 text-xs lg:text-sm'>

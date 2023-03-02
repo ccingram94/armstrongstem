@@ -17,7 +17,7 @@ export default function DataStructuresAndAlgorithms() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full h-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-teal-100 via-cyan-100'>
+      <main className='w-full h-full flex flex-col justify-center items-center bg-gradient-to-b from-white to-teal-100 via-cyan-100'>
         <Header />
         <div className='w-max pt-6 lg:pt-12 flex flex-col flex-wrap justify-center items-center text-center text-cyan-900'>
           <h1 onClick={() => console.log(data)} className='text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Data Structures and Algorithms</h1>
