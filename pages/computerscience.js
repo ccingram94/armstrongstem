@@ -50,10 +50,12 @@ export default function ComputerScience() {
                 <p className='text-xs p-2 m-2'>processes, threads, scheduling, synchronization, memory management, file systems</p>
               </div>
             </Link>
+            <Link href="/cs/networks">
             <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
               <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Computer Networks</h3>
               <p className='text-xs p-2 m-2'>TCP/IP, OSI model, routing, switching</p>
             </div>
+            </Link>
           </div>
           <div className='bg-white bg-opacity-90 w-fit max-w-2xl p-2 m-2 rounded-xl transition-all'>
             <h2 className='text-xl lg:text-2xl font-bold m-2 p-2'>Vocabulary</h2>
