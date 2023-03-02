@@ -18,7 +18,7 @@ export default function OOP() {
       </Head>
       <main className='min-h-screen w-full bg-gradient-to-b from-white to-teal-100 via-cyan-100'>
         <Header />
-        <div className='w-full pt-12 m-2 flex flex-col justify-center items-center text-center text-cyan-900'>
+        <div className='w-full pt-12 p-2 flex flex-col justify-center items-center text-center text-cyan-900'>
           <h1 className='text-xl md:text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Data Structures</h1>
           <h3 className='text-sm lg:text-lg p-2 m-2 lg:font-bold text-left max-w-4xl'> <i>Data structures</i> are useful ways of organizing data.</h3>
           <h3 className='text-sm lg:text-lg p-2 m-2 lg:font-bold text-left max-w-4xl'>An <i>array</i> is a collection of elements of the same type stored in contiguous memory.</h3>
