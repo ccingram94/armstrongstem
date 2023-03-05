@@ -15,7 +15,7 @@ export default function Header () {
                     </div>
                 </Link>
                 
-                <div className="flex flex-row justify-center">
+                <div className="flex flex-row justify-center max-w-xs lg:max-w-max">
                     <div className='flex flex-row justify-center invisible md:visible'>
                         <Link href="/computerscience">
                             <p className="p-2 m-2">Computer Science</p>
