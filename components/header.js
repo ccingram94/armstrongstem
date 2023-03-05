@@ -27,7 +27,7 @@ export default function Header () {
                             <p className="p-2 m-2">SQL</p>
                         </Link>
                     </div>
-                    <Bars3Icon onClick={() => setBurger(!burger)} className='md:hidden h-12 w-12 p-2 hover:text-green-700 rounded-xl transition-all' />
+                    <Bars3Icon onClick={() => setBurger(!burger)} className='md:hidden h-12 w-12 p-2 m-2 hover:text-green-700 rounded-xl transition-all' />
                 </div>
             </div>
         </div>
