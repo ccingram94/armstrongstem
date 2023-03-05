@@ -7,7 +7,7 @@ export default function Header () {
 
     return (
         <>
-        <div className="w-full flex flex-row justify-center items-center text-center text-teal-600 font-bold p-2 shadow-sm">
+        <div className="w-full flex flex-row justify-center items-center text-center text-teal-600 font-bold shadow-sm">
             <div className="w-full max-w-7xl flex flex-row justify-between items-center text-center p-2">
                 <Link href="/">
                     <div>

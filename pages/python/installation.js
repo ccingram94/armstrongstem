@@ -21,10 +21,8 @@ export default function Installation() {
         <Header />
         <div className='w-full pt-12 pt-12 flex flex-col justify-center items-center text-center text-cyan-900'>
           <h1 className='text-xl md:text-2xl lg:text-6xl p-6 lg:p-12 font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Installing Python</h1>
-          <h3 className='text-sm lg:text-lg p-2 m-2 lg:font-bold text-left max-w-4xl'>Downloading and installing the Python is easy.  You can find a download guide at <Link href="https://www.python.org/downloads/">the official Python site.</Link></h3>
-          <h3 className='text-sm lg:text-lg p-2 m-2 lg:font-bold text-left max-w-4xl'>A <i>class</i> is a blueprint for creating objects.  A class defines the <i>attributes</i> (data) and <i>methods</i> (functions) that its objects will have.  You can even create a new class based on an existing class.  This is called <i>inheritance</i> because the new subclass will inherit the attributes and methods of the superclass.</h3>
-          <h3 className='text-sm lg:text-lg p-2 m-2 lg:font-bold text-left max-w-4xl'>Another important feature of object-oriented programming is <i>polymorphism.</i>  This allows objects of different classes to be treated like they are the same.  This means your code can work on multiple types of objects.</h3>
-
+          <h3 className='text-sm lg:text-lg p-2 m-2 lg:font-bold text-left max-w-4xl'>Downloading and installing the Python is easy.  You can find a download guide at <u className='opacity-80 hover:opacity-100 transition-all'> <Link href="https://www.python.org/downloads/">the official Python site.</Link></u></h3>
+          
          
         </div>
       </main>
