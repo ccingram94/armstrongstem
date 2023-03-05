@@ -28,11 +28,11 @@ export default function Header () {
                         </Link>
                     </div>
                     { burger && 
-                        <XMarkIcon onClick={() => setBurger(!burger)} className='md:hidden h-12 w-12 p-2 m-2 hover:text-green-700 rounded-xl transition-all' />
+                        <XMarkIcon onClick={() => setBurger(!burger)} className='md:hidden h-16 w-16 p-2 hover:text-green-700 rounded-xl transition-all' />
                     }
 
                     {!burger &&
-                        <Bars3Icon onClick={() => setBurger(!burger)} className='md:hidden h-12 w-12 p-2 m-2 hover:text-green-700 rounded-xl transition-all' />
+                        <Bars3Icon onClick={() => setBurger(!burger)} className='md:hidden h-16 w-16 p-2 hover:text-green-700 rounded-xl transition-all' />
                     }
                 </div>
             </div>
