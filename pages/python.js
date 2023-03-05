@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
@@ -24,10 +25,18 @@ export default function Python() {
           <h3 className='text-sm lg:text-lg p-2 m-2 font-bold max-w-xs lg:max-w-lg'>{data[0].shortdescription}</h3>
         </div>
         <div className='flex flex-row flex-wrap justify-center items-center text-center p-2 m-2 max-w-6xl'>
+        <Link href="/python/installation">
+          <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
+              <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Installing Python</h3>
+              <p className='text-xs p-2 m-2'>on Windows, Mac, or Linux</p>
+            </div>
+          </Link>
+          <Link href="/python/basics">
             <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
               <h3 className='font-bold text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Python Basics</h3>
               <p className='text-xs p-2 m-2'>variables, data types, control structures, functions</p>
             </div>
+          </Link>
             <div className='bg-white bg-opacity-80 hover:bg-opacity-100 shadow-2xl rounded-xl p-2 m-2 transition-all'>
               <h3 className='font-bold max-w-sm text-xl lg:text-2xl p-2 m-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600'>Object-Oriented Programming with Python</h3>
               <p className='text-xs p-2 m-2'>classes, objects, inheritance, polymorphism</p>
