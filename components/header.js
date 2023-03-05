@@ -8,7 +8,7 @@ export default function Header () {
     return (
         <>
         <div className="w-full flex flex-row justify-center items-center text-center text-teal-600 font-bold shadow-sm">
-            <div className="w-full max-w-7xl flex flex-row justify-between items-center text-center p-2">
+            <div className="max-w-7xl flex flex-row justify-between items-center text-center p-2">
                 <Link href="/">
                     <div>
                         <h1 className="text-2xl lg:text-4xl rounded-full bg-gradient-to-r from-cyan-600 to-teal-600 p-2 m-2 bg-opacity-60 hover:bg-opacity-90 transition-all">🐍</h1>
@@ -28,11 +28,11 @@ export default function Header () {
                         </Link>
                     </div>
                     { burger && 
-                        <XMarkIcon onClick={() => setBurger(!burger)} className='md:hidden h-16 w-16 p-2 hover:text-green-700 rounded-xl transition-all' />
+                        <XMarkIcon onClick={() => setBurger(!burger)} className='md:hidden h-16 w-16 p-2 m-2 hover:text-green-700 rounded-xl transition-all' />
                     }
 
                     {!burger &&
-                        <Bars3Icon onClick={() => setBurger(!burger)} className='md:hidden h-16 w-16 p-2 hover:text-green-700 rounded-xl transition-all' />
+                        <Bars3Icon onClick={() => setBurger(!burger)} className='md:hidden h-16 w-16 p-2 m-2 hover:text-green-700 rounded-xl transition-all' />
                     }
                 </div>
             </div>
